@@ -1,75 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+@font-face {
+  font-family: infinity;
+  src: url(infinity.ttf);
+}
+
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8f0e3;
-  }
-  
-  .card-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .card {
-    width: 250px;
-    height: 400px;
-    margin: 0 10px;
-    position: relative;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    border-radius: 20px;
-    perspective: 1000px;
-  }
-  
-  .card:hover {
-    transform: scale(1.1);
-  }
-  
-  .card .card-front, .card .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 20px;
-  }
-  
-  /* Back face (face-down image) */
-  .card .card-back {
-    background-image: url('cards/tarotverso.webp'); /* Your card's back image */
-    background-size: cover;
-    transform: rotateY(0deg);
-  }
-  
-  /* Front face (card image) */
-  .card .card-front {
-    display: block;
-    background-size: cover;
-    transform: rotateY(180deg);
-    border-radius: 20px;
-  }
-  
-  /* Revealed card effect */
-  .card.revealed {
-    transform: rotateY(180deg);
-  } 
-  
-  .card-details {
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #333;
-    border: 1px solid blue;
-  }
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(#4261c9, #c29ce7);
+  background-image: url(bg1.gif);
+  background-size: cover; 
+  background-attachment: fixed; 
+  background-position: center center;
+  background-repeat:no-repeat;
+  font-family: "Quicksand", sans-serif;
+}
 
-  .card-details h2 {
-    color: red;
-  }
+.card-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
 
-  .card-details h3 {
-    color: purple;
-  }
+.card {
+  width: 300px;
+  height: 480px;
+  margin: 0 10px;
+  position: relative;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border-radius: 20px;
+  perspective: 1000px;
+}
 
-  .card-details p {
-    color: rgb(100, 100, 23);
-  }
-  
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card .card-front,
+.card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 20px;
+}
+
+/* Back face (face-down image) */
+.card .card-back {
+  background-image: url("cards/tarotverso.webp"); /* Your card's back image */
+  background-size: cover;
+  transform: rotateY(0deg);
+}
+
+/* Front face (card image) */
+.card .card-front {
+  display: block;
+  background-size: cover;
+  transform: rotateY(180deg);
+  border-radius: 20px;
+}
+
+/* Revealed card effect */
+.card.revealed {
+  transform: rotateY(180deg);
+}
+
+.card-details {
+  margin: auto;
+  margin-top: 10px;
+  padding: 10px;
+  width: 80%;
+  font-size: 1.2em;
+  color: #333;
+  border-radius: 25px;
+}
+
+.card-details h2, h1 {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 35px;
+}
+
+h1 {
+  color: rgba(255, 255, 255, 0.644);
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  font-size: 25px;
+  margin-bottom: 40px;
+  font-family: "infinity";
+}
+
+.card-details h3 {
+  color: rgba(255, 255, 255, 0.671);
+  letter-spacing: 4px;
+  font-size: 15px;
+  margin-top: -25px;
+}
+
+.card-details p {
+  color: rgb(255, 255, 255);
+  font-family: "Lexend Exa", serif;
+  font-size: 17px;
+}
+
+#drawButton {
+  font-size: 1.2em;
+  margin: 15px;
+  padding: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #0000001a;
+  border: 1px solid rgba(255, 255, 255, 0.541);
+  color: white;
+}
+
+#drawButton:hover {
+  letter-spacing: 4px;
+  transition: 1s;
+}
+
+.logo {
+  width: 300px;
+  margin-bottom: 10px;
+}
