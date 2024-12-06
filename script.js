@@ -67,7 +67,7 @@ const tarotDeck = [
   },
   {
     name: "The Wheel of Fortune",
-    image: "cards/i_tarotpetrea.webp",
+    image: "cards/i_tarotwheel.webp",
     character: "Nyrea & Nalani",
     meaning: "Change, Cycles, Fate, Decisive moments, Unexpected events",
   },
