@@ -80,7 +80,7 @@ const tarotDeck = [
   {
     name: "The Hanged Man",
     image: "cards/i_tarothangedman.webp",
-    character: "Sean Beryl",
+    character: "Hermes Baldr",
     meaning:
       "Waiting, Uncertainty, Lack of direction, Stalling, Disinterest, Stagnation, Avoiding sacrifice",
   },
